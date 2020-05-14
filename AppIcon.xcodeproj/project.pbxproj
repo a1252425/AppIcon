@@ -17,6 +17,8 @@
 		2B627A01246D170300408CDB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B627A00246D170200408CDB /* UIViewController+Extension.swift */; };
 		2B627A03246D184600408CDB /* AddFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B627A02246D184600408CDB /* AddFileView.swift */; };
 		2B627A05246D215D00408CDB /* ImageFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B627A04246D215D00408CDB /* ImageFileCell.swift */; };
+		2B627A07246D31C800408CDB /* ImageGearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B627A06246D31C800408CDB /* ImageGearViewController.swift */; };
+		2B627A0B246D373800408CDB /* ImageGearStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B627A0A246D373800408CDB /* ImageGearStateCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		2B627A00246D170200408CDB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		2B627A02246D184600408CDB /* AddFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFileView.swift; sourceTree = "<group>"; };
 		2B627A04246D215D00408CDB /* ImageFileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileCell.swift; sourceTree = "<group>"; };
+		2B627A06246D31C800408CDB /* ImageGearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGearViewController.swift; sourceTree = "<group>"; };
+		2B627A0A246D373800408CDB /* ImageGearStateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGearStateCell.swift; sourceTree = "<group>"; };
 		40B8EE4C7B46677358F9C8F2 /* Pods-AppIcon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppIcon.debug.xcconfig"; path = "Target Support Files/Pods-AppIcon/Pods-AppIcon.debug.xcconfig"; sourceTree = "<group>"; };
 		E5D6160A7E17FB4C5C113924 /* Pods-AppIcon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppIcon.release.xcconfig"; path = "Target Support Files/Pods-AppIcon/Pods-AppIcon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +81,8 @@
 				2B6279ED246CF33400408CDB /* SceneDelegate.swift */,
 				2B627A04246D215D00408CDB /* ImageFileCell.swift */,
 				2B6279EF246CF33400408CDB /* HomeViewController.swift */,
+				2B627A0A246D373800408CDB /* ImageGearStateCell.swift */,
+				2B627A06246D31C800408CDB /* ImageGearViewController.swift */,
 				2B6279F1246CF33400408CDB /* Main.storyboard */,
 				2B6279F4246CF33600408CDB /* Assets.xcassets */,
 				2B6279F6246CF33600408CDB /* LaunchScreen.storyboard */,
@@ -218,11 +224,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B627A01246D170300408CDB /* UIViewController+Extension.swift in Sources */,
+				2B627A0B246D373800408CDB /* ImageGearStateCell.swift in Sources */,
 				2B6279F0246CF33400408CDB /* HomeViewController.swift in Sources */,
 				2B627A03246D184600408CDB /* AddFileView.swift in Sources */,
 				2B627A05246D215D00408CDB /* ImageFileCell.swift in Sources */,
 				2B6279EC246CF33400408CDB /* AppDelegate.swift in Sources */,
 				2B6279EE246CF33400408CDB /* SceneDelegate.swift in Sources */,
+				2B627A07246D31C800408CDB /* ImageGearViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,7 +35,6 @@ final class HomeViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
-    title = "AppIcon"
     
     setupUI()
     
@@ -120,8 +119,15 @@ extension HomeViewController: UITableViewDelegate {
                  commit editingStyle: UITableViewCell.EditingStyle,
                  forRowAt indexPath: IndexPath) {
     guard editingStyle == .delete else { return }
+    let fileName = files[indexPath.row]
+    try? FileManager.default.removeItem(atPath: fileName.docPath)
+    try? FileManager.default.removeItem(atPath: fileName.replacingOccurrences(of: ".png", with: "").docPath)
     files.remove(at: indexPath.row)
     tableView.deleteRows(at: [indexPath], with: .automatic)
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    show(ImageGearViewController(files[indexPath.row]), sender: self)
   }
 }
 
