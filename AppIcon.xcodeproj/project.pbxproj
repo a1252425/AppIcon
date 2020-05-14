@@ -10,10 +10,13 @@
 		21607176D43B5775AA449030 /* Pods_AppIcon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0937EE4F400CE3780CDD7ABE /* Pods_AppIcon.framework */; };
 		2B6279EC246CF33400408CDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6279EB246CF33400408CDB /* AppDelegate.swift */; };
 		2B6279EE246CF33400408CDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6279ED246CF33400408CDB /* SceneDelegate.swift */; };
-		2B6279F0246CF33400408CDB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6279EF246CF33400408CDB /* ViewController.swift */; };
+		2B6279F0246CF33400408CDB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6279EF246CF33400408CDB /* HomeViewController.swift */; };
 		2B6279F3246CF33400408CDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6279F1246CF33400408CDB /* Main.storyboard */; };
 		2B6279F5246CF33600408CDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B6279F4246CF33600408CDB /* Assets.xcassets */; };
 		2B6279F8246CF33600408CDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B6279F6246CF33600408CDB /* LaunchScreen.storyboard */; };
+		2B627A01246D170300408CDB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B627A00246D170200408CDB /* UIViewController+Extension.swift */; };
+		2B627A03246D184600408CDB /* AddFileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B627A02246D184600408CDB /* AddFileView.swift */; };
+		2B627A05246D215D00408CDB /* ImageFileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B627A04246D215D00408CDB /* ImageFileCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +24,15 @@
 		2B6279E8246CF33400408CDB /* AppIcon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIcon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B6279EB246CF33400408CDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B6279ED246CF33400408CDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2B6279EF246CF33400408CDB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B6279EF246CF33400408CDB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2B6279F2246CF33400408CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B6279F4246CF33600408CDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B6279F7246CF33600408CDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B6279F9246CF33600408CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B6279FF246CF34300408CDB /* AppIcon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIcon.entitlements; sourceTree = "<group>"; };
+		2B627A00246D170200408CDB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2B627A02246D184600408CDB /* AddFileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFileView.swift; sourceTree = "<group>"; };
+		2B627A04246D215D00408CDB /* ImageFileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFileCell.swift; sourceTree = "<group>"; };
 		40B8EE4C7B46677358F9C8F2 /* Pods-AppIcon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppIcon.debug.xcconfig"; path = "Target Support Files/Pods-AppIcon/Pods-AppIcon.debug.xcconfig"; sourceTree = "<group>"; };
 		E5D6160A7E17FB4C5C113924 /* Pods-AppIcon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppIcon.release.xcconfig"; path = "Target Support Files/Pods-AppIcon/Pods-AppIcon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,8 +72,11 @@
 			children = (
 				2B6279FF246CF34300408CDB /* AppIcon.entitlements */,
 				2B6279EB246CF33400408CDB /* AppDelegate.swift */,
+				2B627A02246D184600408CDB /* AddFileView.swift */,
+				2B627A00246D170200408CDB /* UIViewController+Extension.swift */,
 				2B6279ED246CF33400408CDB /* SceneDelegate.swift */,
-				2B6279EF246CF33400408CDB /* ViewController.swift */,
+				2B627A04246D215D00408CDB /* ImageFileCell.swift */,
+				2B6279EF246CF33400408CDB /* HomeViewController.swift */,
 				2B6279F1246CF33400408CDB /* Main.storyboard */,
 				2B6279F4246CF33600408CDB /* Assets.xcassets */,
 				2B6279F6246CF33600408CDB /* LaunchScreen.storyboard */,
@@ -208,7 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B6279F0246CF33400408CDB /* ViewController.swift in Sources */,
+				2B627A01246D170300408CDB /* UIViewController+Extension.swift in Sources */,
+				2B6279F0246CF33400408CDB /* HomeViewController.swift in Sources */,
+				2B627A03246D184600408CDB /* AddFileView.swift in Sources */,
+				2B627A05246D215D00408CDB /* ImageFileCell.swift in Sources */,
 				2B6279EC246CF33400408CDB /* AppDelegate.swift in Sources */,
 				2B6279EE246CF33400408CDB /* SceneDelegate.swift in Sources */,
 			);
